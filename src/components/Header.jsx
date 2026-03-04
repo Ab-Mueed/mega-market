@@ -1,6 +1,6 @@
 import "./Header.css";
-import userLogo from "../assets/icons/user.svg";
-import ticketLogo from "../assets/icons/ticket.svg";
+import userLogo from "../assets/images/user.svg";
+import ticketLogo from "../assets/images/ticket.svg";
 
 function Header() {
   return (

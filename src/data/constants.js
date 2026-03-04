@@ -3,15 +3,44 @@ export const DISCOUNT_SECTION = {
   subtitle: "At 30+ leading horse and country brands",
 };
 
-export const BRAND_LOGOS = [
-  { name: "Flexible Fit Equestrian", alt: "Flexible Fit Equestrian logo" },
-  { name: "John & Jarrod", alt: "John & Jarrod logo" },
-  { name: "Horseland", alt: "Horseland logo" },
-  { name: "Leader Equine", alt: "Leader Equine logo" },
-  { name: "GEN Equestrian", alt: "GEN Equestrian logo" },
-  { name: "Ariat", alt: "Ariat logo" },
-  { name: "Easy Feed", alt: "Easy Feed logo" },
+export const BRANDS = [
+  {
+    name: "Flexible Fit",
+    image: "/src/assets/images/flexible-brand.png",
+    alt: "Flexible Fit Equestrian",
+  },
+  {
+    name: "Jono",
+    image: "/src/assets/images/jono-brand.png",
+    alt: "Jono & Johno",
+  },
+  {
+    name: "Ringers",
+    image: "/src/assets/images/ringers-brand.png",
+    alt: "Ringers Western",
+  },
+  {
+    name: "Leader",
+    image: "/src/assets/images/leader-brand.png",
+    alt: "Leader Equine",
+  },
+  {
+    name: "CEN",
+    image: "/src/assets/images/cen-brand.png",
+    alt: "CEN Nutrition",
+  },
+  { name: "Ariat", image: "/src/assets/images/ariat-brand.png", alt: "Ariat" },
+  {
+    name: "Greg Grant",
+    image: "/src/assets/images/greg-brand.png",
+    alt: "Greg Grant Saddlery",
+  },
 ];
+
+export const TIMER_CONFIG = {
+  label: "HURRY, GIVEAWAY CLOSES IN",
+  units: ["DAYS", "HOURS", "MINUTES", "SECONDS"],
+};
 
 export const PRICING_TIERS = [
   {
@@ -102,7 +131,3 @@ export const PAYMENT_METHODS = [
   { name: "Shop Pay", alt: "Shop Pay" },
   { name: "PayPal", alt: "PayPal" },
 ];
-
-export const COUNTDOWN_END_DATE = new Date(
-  Date.now() + 7 * 24 * 60 * 60 * 1000,
-); // 7 days from now

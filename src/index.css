@@ -22,9 +22,13 @@ img {
 :root {
   --color-primary: #c84e3f;
   --color-dark: #222;
-  --color-light: #f4ede6;
+  --color-cream: #f4e9e1;
+  --color-brown: #5a3d3d;
+  --color-light-brown: #654d51;
   --color-white: #ffffff;
   --color-green: #3f7c63;
+  --color-burgandy: #843943;
+  --color-light-burgandy: #762e37;
 
   --fm-xs: 8px;
   --fm-sm: 12px;
@@ -32,6 +36,8 @@ img {
   --fm-lg: 18px;
   --fm-xl: 20px;
   --fm-xxl: 24px;
+  --fm-2xl: 40px;
+  --fm-2xxl: 48px;
 
   --space-xs: 4px;
   --space-sm: 8px;
@@ -41,6 +47,9 @@ img {
   --space-xxl: 32px;
   --space-2xl: 48px;
   --space-2xxl: 64px;
+  --space-3xl: 72px;
+  --space-3xxl: 96px;
+  --space-4xxl: 128px;
 
   --radius-sm: 6px;
   --radius-md: 12px;
