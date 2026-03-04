@@ -1,0 +1,56 @@
+/* Header - Uses Flexbox for horizontal layout with centered items */
+/* Flexbox is ideal here because we need items in a single row with centering */
+
+.header {
+  background-color: var(--color-primary);
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.header-badge {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  padding-right: var(--space-md);
+  padding-left: var(--space-xs);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--fm-sm);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.badge-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.badge-text {
+  white-space: nowrap;
+  padding: 0px var(--space-sm);
+}
+
+.header-badge-left {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header-badge-left {
+    display: flex;
+  }
+
+  .header-badge {
+    font-size: var(--fm-lg);
+  }
+
+  .badge-text {
+    padding: 0px;
+  }
+}

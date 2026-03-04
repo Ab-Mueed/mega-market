@@ -1,0 +1,11 @@
+.hero-img {
+  height: 422px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    height: auto;
+    width: auto;
+  }
+}
