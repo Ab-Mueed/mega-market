@@ -1,0 +1,344 @@
+/* =============================================
+   PackageCard Component
+   Matches Figma: 5 tiers, 3+2 flex layout
+   ============================================= */
+
+.package-card {
+  position: relative;
+  background-color: var(--color-cream, #f5f0e8);
+  border-radius: 16px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  overflow: visible; /* allow header tab to overflow */
+  position: relative;
+}
+
+/* ── Header tab (coloured label that sits on top of card) ── */
+.package-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 18px 12px;
+  border-radius: 10px 10px 0 0;
+  line-height: 1.1;
+  width: fit-content;
+  position: absolute;
+  top: -69px;
+  left: 10px;
+}
+
+.package-card__name {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--color-cream);
+  text-transform: uppercase;
+}
+
+.package-card__label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+/* ── Card body ── */
+.package-card__body {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.package-card__entries {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  line-height: 1;
+}
+
+/* ── Feature list ── */
+.package-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.package-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.package-card__check {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+}
+
+.package-card__check svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Divider ── */
+.package-card__divider {
+  border: none;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.12);
+  margin: 0 0 16px 0;
+}
+
+/* ── Pricing ── */
+.package-card__pricing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.package-card__price {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.package-card__price-note {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 3px;
+}
+
+/* ── Button ── */
+.package-card__button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  color: #fff;
+}
+
+.package-card__button:hover {
+  opacity: 0.88;
+}
+
+/* =============================================
+   PER-TIER COLOR THEMES
+   ============================================= */
+
+/* STARTER — burgundy */
+.package-card--starter {
+  border-color: #8b2236;
+}
+.package-card--starter .package-card__header {
+  background-color: #8b2236;
+}
+.package-card--starter .package-card__entries {
+  color: #8b2236;
+}
+.package-card--starter .package-card__check svg {
+  color: #8b2236;
+}
+.package-card--starter .package-card__price {
+  color: #8b2236;
+}
+.package-card--starter .package-card__divider {
+  border-color: #8b2236;
+  opacity: 0.3;
+}
+.package-card__button--starter {
+  background-color: #8b2236;
+}
+
+/* BASIC — dark brown/charcoal */
+.package-card--basic {
+  border-color: #3d2b2b;
+}
+.package-card--basic .package-card__header {
+  background-color: #3d2b2b;
+}
+.package-card--basic .package-card__entries {
+  color: #3d2b2b;
+}
+.package-card--basic .package-card__check svg {
+  color: #3d2b2b;
+}
+.package-card--basic .package-card__price {
+  color: #3d2b2b;
+}
+.package-card--basic .package-card__divider {
+  border-color: #3d2b2b;
+  opacity: 0.3;
+}
+.package-card__button--basic {
+  background-color: #3d2b2b;
+}
+
+/* DELUXE — forest green */
+.package-card--deluxe {
+  border-color: #2d6b4f;
+}
+.package-card--deluxe .package-card__header {
+  background-color: #2d6b4f;
+}
+.package-card--deluxe .package-card__entries {
+  color: #2d6b4f;
+}
+.package-card--deluxe .package-card__check svg {
+  color: #2d6b4f;
+}
+.package-card--deluxe .package-card__price {
+  color: #2d6b4f;
+}
+.package-card--deluxe .package-card__divider {
+  border-color: #2d6b4f;
+  opacity: 0.3;
+}
+.package-card__button--deluxe {
+  background-color: #2d6b4f;
+}
+
+/* PREMIUM — orange/coral */
+.package-card--premium {
+  border-color: #d95f2b;
+}
+.package-card--premium .package-card__header {
+  background-color: #d95f2b;
+}
+.package-card--premium .package-card__entries {
+  color: #d95f2b;
+}
+.package-card--premium .package-card__check svg {
+  color: #d95f2b;
+}
+.package-card--premium .package-card__price {
+  color: #d95f2b;
+}
+.package-card--premium .package-card__divider {
+  border-color: #d95f2b;
+  opacity: 0.3;
+}
+.package-card__button--premium {
+  background-color: #d95f2b;
+}
+
+/* ELITE — dark/black with red glow */
+.package-card--elite {
+  background-color: #1a1a1a;
+  border-color: #d95f2b;
+  box-shadow: 0 0 30px 6px rgba(217, 95, 43, 0.45);
+}
+.package-card--elite .package-card__header {
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #d95f2b;
+}
+.package-card--elite .package-card__entries {
+  color: #fff;
+}
+.package-card--elite .package-card__feature {
+  color: #ccc;
+}
+.package-card--elite .package-card__check svg {
+  color: #2d6b4f;
+}
+.package-card--elite .package-card__price {
+  color: #fff;
+}
+.package-card--elite .package-card__price-note {
+  color: #666;
+}
+.package-card--elite .package-card__divider {
+  border-color: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+}
+.package-card__button--elite {
+  background-color: #f5f0e8;
+  color: #1a1a1a;
+}
+
+/* =============================================
+   BADGE ANNOTATION (handwritten arrow labels)
+   ============================================= */
+
+.package-badge-annotation {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  width: 150px;
+  height: 60px;
+}
+
+/* "Most popular" — top right of Deluxe card */
+.package-badge-annotation--popular {
+  top: -120px;
+  right: -20px;
+  color: #3d2b2b;
+}
+
+.package-badge-annotation--popular .package-badge-text {
+  position: absolute;
+  top: 5px;
+  right: 60px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.package-badge-annotation--popular .package-badge-arrow {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  height: 60px;
+}
+
+/* "Best value" — top left of Premium card */
+.package-badge-annotation--bestvalue {
+  top: -120px;
+  right: 10px;
+  color: #3d2b2b;
+}
+
+.package-badge-annotation--bestvalue .package-badge-text {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  font-size: 30px;
+}
+
+.package-badge-annotation--bestvalue .package-badge-arrow {
+  position: absolute;
+  top: 22px;
+  right: 6px;
+  height: 60px;
+}
+
+.package-badge-text {
+  font-family: "Caveat", "Dancing Script", cursive;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.package-badge-arrow {
+  width: 50px;
+  height: 40px;
+  display: block;
+}

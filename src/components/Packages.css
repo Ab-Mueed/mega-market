@@ -1,0 +1,51 @@
+.packages-section {
+  background-color: var(--color-cream, #f5f0e8);
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 180px;
+  padding-top: 260px;
+  position: relative;
+  top: -100px;
+  z-index: 1;
+}
+
+.packages-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.packages-row-top {
+  max-width: 1060px;
+}
+
+.packages-row-bottom {
+  max-width: 700px; /* Narrower for 2 cards */
+}
+
+/* Give each card a fixed width */
+.packages-row > .package-card {
+  flex: 0 0 300px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1000px) {
+  .packages-row > .package-card {
+    flex: 0 0 280px;
+  }
+}
+
+@media (max-width: 700px) {
+  .packages-section {
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .packages-row > .package-card {
+    flex: 0 0 100%;
+    max-width: 340px;
+  }
+}
