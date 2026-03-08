@@ -1,9 +1,9 @@
 import { TIMER_CONFIG } from '../data/constants';
-import './Timer.css';
+import '../styles/Timer.css';
 
 function Timer({ label, variant = "default" }) {
   const timerLabel = label || TIMER_CONFIG.label;
-  
+
   return (
     <div className={`timer timer--${variant}`}>
       <p className="timer-label">{timerLabel}</p>

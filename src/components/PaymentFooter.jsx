@@ -1,5 +1,5 @@
 import { PAYMENT_METHODS } from '../data/constants';
-import './PaymentFooter.css';
+import '../styles//PaymentFooter.css';
 
 function PaymentFooter() {
   const topRowMethods = PAYMENT_METHODS.slice(0, 3);

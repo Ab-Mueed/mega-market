@@ -1,4 +1,3 @@
-/* Brands section - partner logos display */
 .brands-section {
   background-color: var(--color-1);
   padding: var(--space-6) var(--space-9);
@@ -6,7 +5,6 @@
   position: relative;
 }
 
-/* Section title */
 .brands-title {
   color: var(--color-19);
   font-size: var(--fs-12);
@@ -16,14 +14,12 @@
   margin-bottom: var(--space-2);
 }
 
-/* Section subtitle */
 .brands-subtitle {
   color: var(--color-19);
   font-size: var(--fs-6);
   margin-bottom: var(--space-15);
 }
 
-/* Logo grid container */
 .brands-container {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +31,6 @@
   margin-right: auto;
 }
 
-/* Individual brand logo */
 .brand-item {
   max-width: 100px;
   max-height: 60px;
@@ -43,7 +38,6 @@
   object-fit: contain;
 }
 
-/* Call-to-action button */
 .brands-button {
   background-color: var(--color-2);
   color: var(--color-19);
@@ -66,12 +60,10 @@
   outline-offset: 2px;
 }
 
-/* Chevron decoration - hidden on mobile */
 .chevron {
   display: none;
 }
 
-/* Mobile: reorder logos, hide some, add top padding */
 @media (max-width: 767px) {
   .brands-section {
     padding-top: var(--space-20);
@@ -100,7 +92,6 @@
   }
 }
 
-/* Desktop: show all logos, add chevron clip-path */
 @media (min-width: 768px) {
   .brands-container {
     gap: var(--space-15);

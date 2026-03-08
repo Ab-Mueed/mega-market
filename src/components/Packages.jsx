@@ -1,6 +1,6 @@
 import { PRICING_TIERS } from "../data/constants";
 import PackageCard from "./PackageCard";
-import "./Packages.css";
+import "../styles/Packages.css";
 
 function Packages() {
   const topCards = PRICING_TIERS.slice(0, 3);

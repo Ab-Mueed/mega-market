@@ -1,5 +1,5 @@
 import { DISCOUNT_SECTION, BRANDS } from "../data/constants";
-import "./Brands.css";
+import "../styles/Brands.css";
 import Chevron from "./Chevron";
 
 function Brands() {

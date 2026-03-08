@@ -1,4 +1,3 @@
-/* Sale section - mobile-only promotional content */
 .sale-section {
   display: flex;
   flex-direction: column;
@@ -8,7 +7,6 @@
   background-color: var(--color-16);
 }
 
-/* Header group - badge and title */
 .sale-header {
   display: flex;
   flex-direction: column;
@@ -16,7 +14,6 @@
   gap: var(--space-4);
 }
 
-/* "Getting started is easy" badge */
 .getting-started-badge {
   border: 2px solid var(--color-2);
   border-radius: var(--radius-6);
@@ -27,7 +24,6 @@
   text-transform: capitalize;
 }
 
-/* "PICK YOUR PACKAGE" title */
 .pick-package-title {
   font-size: var(--fs-12);
   font-weight: 800;
@@ -38,7 +34,6 @@
   margin: 0;
 }
 
-/* 2X entries promotional banner */
 .entries-banner {
   background: var(--color-14);
   border: 2px solid var(--color-15);
@@ -53,12 +48,10 @@
   box-sizing: border-box;
 }
 
-/* Left side text content */
 .entries-text {
   flex: 1;
 }
 
-/* "2X ENTRIES NOW LIVE" title */
 .entries-title {
   font-size: var(--fs-5);
   font-weight: 800;
@@ -68,7 +61,6 @@
   text-transform: uppercase;
 }
 
-/* "On Premium & Elite packages" subtitle */
 .entries-subtitle {
   font-size: var(--fs-2);
   color: var(--color-10);
@@ -77,7 +69,6 @@
   margin: 0;
 }
 
-/* Right side packages counter */
 .packages-left {
   background-color: var(--color-9);
   border-radius: var(--radius-1);
@@ -89,7 +80,6 @@
   white-space: nowrap;
 }
 
-/* Package count number */
 .packages-number {
   font-size: var(--fs-6);
   font-weight: 800;
@@ -97,7 +87,6 @@
   line-height: 1;
 }
 
-/* "sale packages left" text */
 .packages-text {
   font-size: var(--fs-2);
   color: var(--color-19);
@@ -105,7 +94,6 @@
   text-align: center;
 }
 
-/* Limited availability banner */
 .limited-banner {
   background-color: var(--color-16);
   border-radius: var(--radius-3);
@@ -119,14 +107,12 @@
   box-sizing: border-box;
 }
 
-/* Banner header with title and spots left */
 .limited-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* "LIMITED TO 1500 PEOPLE" title */
 .limited-title {
   font-size: var(--fs-4);
   font-weight: 700;
@@ -134,14 +120,12 @@
   text-transform: uppercase;
 }
 
-/* "200 spots left" text */
 .spots-left {
   font-size: var(--fs-2);
   font-weight: 600;
   color: var(--color-5);
 }
 
-/* Progress bar container */
 .progress-bar {
   width: 100%;
   height: 32px;
@@ -151,16 +135,13 @@
   position: relative;
 }
 
-/* Progress bar fill */
 .progress-fill {
   height: 100%;
   background-color: var(--color-5);
   border-radius: var(--radius-6);
-  transition: width 0.3s ease;
   position: relative;
 }
 
-/* Progress indicator circle */
 .progress-fill::after {
   content: "";
   position: absolute;
@@ -173,14 +154,12 @@
   border-radius: 50%;
 }
 
-/* Hide on desktop (768px and above) */
 @media (min-width: 768px) {
   .sale-section {
     display: none;
   }
 }
 
-/* Respect user motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .progress-fill {
     transition: none;

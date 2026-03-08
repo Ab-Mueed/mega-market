@@ -1,4 +1,3 @@
-/* Greycliff CF Font Family */
 @font-face {
   font-family: "Greycliff CF";
   src: url("/fonts/Greycliff-CF-Regular.otf") format("opentype");
@@ -70,31 +69,31 @@ img {
 }
 
 :root {
-  /* Colors - only those actually used */
-  --color-1: #843943; /* burgundy */
-  --color-2: #c84e3f; /* primary red */
-  --color-3: #d64f34; /* orange */
-  --color-4: #d95f2b; /* coral orange */
-  --color-5: #554144; /* dark brown */
-  --color-6: #5a3d3d; /* brown */
-  --color-7: #654d51; /* light brown */
-  --color-8: #7a6265; /* muted brown */
-  --color-9: #3f7c63; /* green */
-  --color-10: #4a8769; /* dull green */
-  --color-11: #2d6b4f; /* dark green */
-  --color-12: #8b2236; /* dark burgundy */
-  --color-13: #3d2b2b; /* charcoal */
-  --color-14: #b8c299; /* sage green */
-  --color-15: #a2ab87; /* olive green */
-  --color-16: #f4e9e1; /* cream */
-  --color-17: #fff5ee; /* light cream */
-  --color-18: #d4c4b0; /* tan */
-  --color-19: #ffffff; /* white */
-  --color-20: #222222; /* dark text */
-  --color-21: #232323; /* black */
-  --color-22: #131309; /* deep black */
+  /* Colors */
+  --color-1: #843943;
+  --color-2: #c84e3f;
+  --color-3: #d64f34;
+  --color-4: #d95f2b;
+  --color-5: #554144;
+  --color-6: #5a3d3d;
+  --color-7: #654d51;
+  --color-8: #7a6265;
+  --color-9: #3f7c63;
+  --color-10: #4a8769;
+  --color-11: #2d6b4f;
+  --color-12: #8b2236;
+  --color-13: #3d2b2b;
+  --color-14: #b8c299;
+  --color-15: #a2ab87;
+  --color-16: #f4e9e1;
+  --color-17: #fff5ee;
+  --color-18: #d4c4b0;
+  --color-19: #ffffff;
+  --color-20: #222222;
+  --color-21: #232323;
+  --color-22: #131309;
 
-  /* Font Sizes - only those actually used */
+  /* Font Sizes */
   --fs-1: 8px;
   --fs-2: 12px;
   --fs-3: 14px;
@@ -109,7 +108,7 @@ img {
   --fs-12: 40px;
   --fs-13: 48px;
 
-  /* Spacing - only those actually used */
+  /* Spacing */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 10px;
@@ -136,7 +135,7 @@ img {
   --space-24: 160px;
   --space-25: 180px;
 
-  /* Border Radius */
+  /* Radius */
   --radius-1: 6px;
   --radius-2: 10px;
   --radius-3: 12px;

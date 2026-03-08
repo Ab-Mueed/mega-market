@@ -1,4 +1,3 @@
-/* Payment footer - mobile-only payment methods display */
 .payment-footer {
   background-color: var(--color-16);
   padding: var(--space-9) var(--space-6);
@@ -7,7 +6,6 @@
   align-items: center;
 }
 
-/* Payment methods card */
 .payment-methods {
   background-color: var(--color-17);
   border-radius: var(--radius-5);
@@ -21,7 +19,6 @@
   max-width: 500px;
 }
 
-/* Payment title */
 .payment-title {
   font-size: var(--fs-8);
   font-weight: 500;
@@ -32,7 +29,6 @@
   margin: 0;
 }
 
-/* Payment logo row */
 .payment-row {
   display: flex;
   justify-content: center;
@@ -41,29 +37,24 @@
   width: 100%;
 }
 
-/* Top row with 3 logos */
 .payment-row-top {
   gap: var(--space-15);
 }
 
-/* Bottom row with 1 logo */
 .payment-row-bottom {
   justify-content: center;
 }
 
-/* Payment logo */
 .payment-logo {
   height: 22px;
   width: auto;
   object-fit: contain;
 }
 
-/* Large payment logo */
 .payment-logo-large {
   height: 22px;
 }
 
-/* Hide on desktop (768px and above) */
 @media (min-width: 768px) {
   .payment-footer {
     display: none;

@@ -1,4 +1,3 @@
-/* Packages section - pricing tiers display */
 .packages-section {
   background-color: var(--color-16);
   padding: var(--space-24) var(--space-16);
@@ -9,7 +8,6 @@
   position: relative;
 }
 
-/* Row container for package cards */
 .packages-row {
   display: flex;
   justify-content: center;
@@ -17,29 +15,24 @@
   flex-wrap: wrap;
 }
 
-/* Top row - 3 cards */
 .packages-row-top {
   max-width: 1060px;
 }
 
-/* Bottom row - 2 cards */
 .packages-row-bottom {
   max-width: 700px;
 }
 
-/* Fixed width for each card */
 .packages-row > .package-card {
   flex: 0 0 300px;
 }
 
-/* Tablet: reduce card width slightly */
 @media (max-width: 1000px) {
   .packages-row > .package-card {
     flex: 0 0 280px;
   }
 }
 
-/* Tablet: 768px to 1110px - extra gap for wrapped cards */
 @media (min-width: 768px) and (max-width: 1132px) {
   .packages-row {
     gap: var(--space-16);
@@ -47,7 +40,6 @@
   }
 }
 
-/* Mobile: stack cards vertically */
 @media (max-width: 767px) {
   .packages-section {
     padding: var(--space-17) var(--space-8);
@@ -66,7 +58,6 @@
     max-width: 340px;
   }
 
-  /* Extra spacing for cards with arrow annotations */
   .package-card--deluxe,
   .package-card--premium {
     margin-top: var(--space-16);

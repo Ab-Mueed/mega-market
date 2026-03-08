@@ -1,10 +1,9 @@
-/* Timer container - countdown display */
 .timer {
   background-color: var(--color-6);
   border: 6px solid var(--color-7);
   width: fit-content;
   border-radius: var(--radius-6);
-  padding: 10px var(--space-8);
+  padding: var(--space-6) var(--space-12);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +12,6 @@
   top: -65px;
 }
 
-/* Timer label text */
 .timer-label {
   color: var(--color-19);
   font-size: var(--fs-6);
@@ -22,21 +20,18 @@
   text-align: center;
 }
 
-/* Container for all timer circles */
 .timer-circles {
   display: flex;
   align-items: center;
   gap: var(--space-2);
 }
 
-/* Wrapper for each time unit (circle + label) */
 .timer-unit-wrapper {
   display: flex;
   align-items: center;
   gap: var(--space-2);
 }
 
-/* Colon separator between time units */
 .timer-colon {
   color: var(--color-19);
   font-size: var(--fs-8);
@@ -45,7 +40,6 @@
   margin: var(--space-1) var(--space-1) 0 var(--space-1);
 }
 
-/* Individual time unit container */
 .timer-unit {
   display: flex;
   flex-direction: column;
@@ -53,7 +47,6 @@
   gap: var(--space-1);
 }
 
-/* Circle containing time value */
 .timer-circle {
   width: 40px;
   height: 40px;
@@ -64,7 +57,6 @@
   justify-content: center;
 }
 
-/* Time value number */
 .timer-value {
   color: var(--color-19);
   font-size: var(--fs-2);
@@ -72,7 +64,6 @@
   line-height: 1;
 }
 
-/* Time unit label (DAYS, HOURS, etc) */
 .timer-unit-label {
   color: var(--color-19);
   font-size: var(--fs-1);
@@ -80,7 +71,6 @@
   text-transform: uppercase;
 }
 
-/* Desktop: horizontal layout */
 @media (min-width: 768px) {
   .timer {
     flex-direction: row;
@@ -110,7 +100,6 @@
   }
 }
 
-/* Sale variant - orange background for mobile sale section */
 .timer--sale {
   background-color: var(--color-4);
   border: none;

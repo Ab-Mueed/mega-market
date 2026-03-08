@@ -1,5 +1,5 @@
 import Timer from './Timer';
-import './Sale.css';
+import '../styles/Sale.css';
 
 function Sale() {
   return (

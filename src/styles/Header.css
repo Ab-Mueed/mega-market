@@ -1,4 +1,3 @@
-/* Header container - top promotional badges */
 .header {
   background-color: var(--color-2);
   padding: 14px;
@@ -9,7 +8,6 @@
   flex-wrap: wrap;
 }
 
-/* Individual badge */
 .header-badge {
   background-color: var(--color-16);
   color: var(--color-20);
@@ -26,24 +24,20 @@
   text-transform: uppercase;
 }
 
-/* Badge icon */
 .badge-icon {
   width: 22px;
   height: 22px;
 }
 
-/* Badge text */
 .badge-text {
   white-space: nowrap;
   padding: 0 var(--space-2);
 }
 
-/* Left badge hidden on mobile */
 .header-badge-left {
   display: none;
 }
 
-/* Desktop: show both badges */
 @media (min-width: 768px) {
   .header-badge-left {
     display: flex;

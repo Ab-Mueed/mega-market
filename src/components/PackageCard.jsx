@@ -1,6 +1,6 @@
-import "./PackageCard.css";
+import "../styles/PackageCard.css";
 import arrowSVG from "../assets/images/arrow.svg";
-import tickSVG from "../assets/images/tick.svg";
+import tickSVG from "../assets/icons/tick.svg";
 
 function PackageCard({ tier }) {
   const {
@@ -24,13 +24,11 @@ function PackageCard({ tier }) {
         </div>
       )}
 
-      {/* Card header tab */}
       <div className="package-card-header">
         <span className="package-card-name">{name}</span>
         <span className="package-card-label">PACKAGE</span>
       </div>
 
-      {/* Card body */}
       <div className="package-card-body">
         <h3 className="package-card-entries">{entries}</h3>
 
