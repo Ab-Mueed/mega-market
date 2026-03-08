@@ -302,7 +302,7 @@
 /* "Most popular" — top right of Deluxe card */
 .package-badge-annotation--popular {
   top: -120px;
-  right: -20px;
+  right: 10px;
   color: #3d2b2b;
 }
 
@@ -324,7 +324,7 @@
 /* "Best value" — top left of Premium card */
 .package-badge-annotation--bestvalue {
   top: -120px;
-  right: 10px;
+  right: 20px;
   color: #3d2b2b;
 }
 

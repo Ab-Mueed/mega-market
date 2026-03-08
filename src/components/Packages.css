@@ -1,14 +1,11 @@
 .packages-section {
-  background-color: var(--color-cream, #f5f0e8);
-  padding: 80px 40px;
+  background-color: var(--color-cream);
+  padding: 160px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 180px;
-  padding-top: 260px;
   position: relative;
-  top: -100px;
-  z-index: 1;
 }
 
 .packages-row {
@@ -54,5 +51,11 @@
   .packages-row > .package-card {
     flex: 0 0 100%;
     max-width: 340px;
+  }
+
+  /* Extra spacing for Deluxe and Premium cards with arrow annotations */
+  .package-card--deluxe,
+  .package-card--premium {
+    margin-top: 40px;
   }
 }
