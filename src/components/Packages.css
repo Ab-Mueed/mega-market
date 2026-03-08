@@ -1,13 +1,11 @@
 .packages-section {
   background-color: var(--color-cream);
-  padding: 80px 40px;
+  padding: 160px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 180px;
-  padding-top: 260px;
   position: relative;
-  top: -100px;
 }
 
 .packages-row {
