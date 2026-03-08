@@ -160,6 +160,9 @@
 .package-card--starter .package-card__price {
   color: var(--color-burgandy);
 }
+.package-card--starter .package-card__price-note {
+  color: #8b2236;
+}
 .package-card--starter .package-card__divider {
   border: 1px solid var(--color-burgandy);
 }
@@ -182,6 +185,9 @@
 }
 .package-card--basic .package-card__price {
   color: var(--color-dark-brown);
+}
+.package-card--basic .package-card__price-note {
+  color: #3d2b2b;
 }
 .package-card--basic .package-card__divider {
   border: 1px solid var(--color-dark-brown);
@@ -206,6 +212,9 @@
 .package-card--deluxe .package-card__price {
   color: var(--color-dull-green);
 }
+.package-card--deluxe .package-card__price-note {
+  color: #2d6b4f;
+}
 .package-card--deluxe .package-card__divider {
   border: 1px solid var(--color-dull-green);
 }
@@ -228,6 +237,9 @@
 }
 .package-card--premium .package-card__price {
   color: var(--color-orange);
+}
+.package-card--premium .package-card__price-note {
+  color: #d95f2b;
 }
 .package-card--premium .package-card__divider {
   border: 1px solid var(--color-orange);
