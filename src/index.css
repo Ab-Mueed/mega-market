@@ -60,7 +60,7 @@ body {
     sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background: #f4ede6;
+  background: var(--color-cream);
   color: #222;
 }
 
