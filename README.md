@@ -7,7 +7,7 @@ A responsive landing page for a giveaway campaign built with React and modern CS
 This is a pixel-perfect implementation of a Figma design focusing on:
 
 - Semantic HTML and accessibility
-- Mobile-first responsive design (360px, 768px, 1280px breakpoints)
+- Mobile-first responsive design
 - Modern CSS with Flexbox/Grid (no frameworks)
 - Clean component architecture
 
