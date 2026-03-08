@@ -16,6 +16,7 @@ function Brands() {
               src={brand.image}
               alt={brand.alt}
               className="brand-item"
+              loading="lazy"
             />
           ))}
         </div>

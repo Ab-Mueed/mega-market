@@ -40,11 +40,12 @@ npm run preview
 
 ```
 src/
-├── components/     # React components with CSS
-├── data/          # Static content (constants.js)
-├── assets/        # Images and icons
-├── App.jsx        # Main app
-└── index.css      # Global styles and CSS variables
+├── components/     # React components
+├── styles/         # Component CSS files
+├── data/           # Static content (constants.js)
+├── assets/         # Images and icons
+├── App.jsx         # Main app
+└── index.css       # Global styles and CSS variables
 ```
 
 ## Key Features
@@ -53,7 +54,7 @@ src/
 - **Accessibility**: Semantic HTML, ARIA labels, reduced motion support
 - **CSS Variables**: Centralized design tokens for colors, spacing, typography
 - **Component Reusability**: DRY principles, props-based configuration
-- **Performance**: Lazy loading, minimal JS, optimized builds
+- **Performance**: Lazy loading, minimal JS
 
 ## Design Decisions
 

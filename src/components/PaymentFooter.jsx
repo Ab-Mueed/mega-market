@@ -19,6 +19,7 @@ function PaymentFooter() {
               src={method.image}
               alt={method.name}
               className="payment-logo"
+              loading="lazy"
             />
           ))}
         </div>
@@ -28,6 +29,7 @@ function PaymentFooter() {
             src={bottomRowMethod.image}
             alt={bottomRowMethod.name}
             className="payment-logo payment-logo-large"
+            loading="lazy"
           />
         </div>
       </div>
