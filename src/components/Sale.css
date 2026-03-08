@@ -1,156 +1,166 @@
-/* Sale Section - Only visible on mobile (below 768px) */
-
+/* Sale section - mobile-only promotional content */
 .sale-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-2xl);
-  padding: var(--space-xl) var(--space-lg);
-  background-color: var(--color-cream);
+  gap: var(--space-15);
+  padding: var(--space-9) var(--space-6);
+  background-color: var(--color-16);
 }
 
-/* Sale Header - Groups badge and title together */
+/* Header group - badge and title */
 .sale-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-md); /* Smaller gap between badge and title */
+  gap: var(--space-4);
 }
 
-/* Getting Started Badge */
+/* "Getting started is easy" badge */
 .getting-started-badge {
-  border: 2px solid var(--color-primary);
-  border-radius: 100px;
-  padding: var(--space-sm) var(--space-xl);
-  color: #d64f34;
-  font-size: var(--fm-md);
+  border: 2px solid var(--color-2);
+  border-radius: var(--radius-6);
+  padding: var(--space-2) var(--space-9);
+  color: var(--color-3);
+  font-size: var(--fs-4);
   font-weight: 600;
   text-transform: capitalize;
 }
 
-/* Pick Package Title */
+/* "PICK YOUR PACKAGE" title */
 .pick-package-title {
-  font-size: var(--fm-2xl);
+  font-size: var(--fs-12);
   font-weight: 800;
-  color: #554144;
+  color: var(--color-5);
   text-transform: uppercase;
   text-align: center;
   line-height: 108%;
   margin: 0;
 }
 
-/* Entries Banner */
+/* 2X entries promotional banner */
 .entries-banner {
-  background: #b8c299;
-  border: 2px solid #a2ab87;
-  border-radius: var(--radius-md);
-  padding: 13px 18px;
+  background: var(--color-14);
+  border: 2px solid var(--color-15);
+  border-radius: var(--radius-3);
+  padding: var(--space-5) var(--space-7);
   width: 100%;
   max-width: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-6);
   box-sizing: border-box;
 }
 
+/* Left side text content */
 .entries-text {
   flex: 1;
 }
 
+/* "2X ENTRIES NOW LIVE" title */
 .entries-title {
-  font-size: 17px;
+  font-size: var(--fs-5);
   font-weight: 800;
-  color: var(--color-dark-brown);
+  color: var(--color-5);
   line-height: 108%;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-1);
   text-transform: uppercase;
 }
 
+/* "On Premium & Elite packages" subtitle */
 .entries-subtitle {
-  font-size: var(--fm-sm);
-  color: #4a8769;
+  font-size: var(--fs-2);
+  color: var(--color-10);
   font-weight: 500;
   line-height: 108%;
   margin: 0;
 }
 
+/* Right side packages counter */
 .packages-left {
-  background-color: var(--color-green);
-  border-radius: var(--radius-sm);
-  padding: 25px 10px;
+  background-color: var(--color-9);
+  border-radius: var(--radius-1);
+  padding: var(--space-10) var(--space-3);
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--space-sm);
+  gap: var(--space-2);
   white-space: nowrap;
 }
 
+/* Package count number */
 .packages-number {
-  font-size: var(--fm-lg);
+  font-size: var(--fs-6);
   font-weight: 800;
-  color: var(--color-white);
+  color: var(--color-19);
   line-height: 1;
 }
 
+/* "sale packages left" text */
 .packages-text {
-  font-size: var(--fm-sm);
-  color: var(--color-white);
+  font-size: var(--fs-2);
+  color: var(--color-19);
   font-weight: 500;
   text-align: center;
 }
 
-/* Limited Banner */
+/* Limited availability banner */
 .limited-banner {
-  background-color: var(--color-cream);
-  border-radius: var(--radius-md);
-  padding: var(--space-xl);
-  border: 2px solid #554144;
+  background-color: var(--color-16);
+  border-radius: var(--radius-3);
+  padding: var(--space-9);
+  border: 2px solid var(--color-5);
   width: 100%;
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-4);
   box-sizing: border-box;
 }
 
+/* Banner header with title and spots left */
 .limited-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* "LIMITED TO 1500 PEOPLE" title */
 .limited-title {
-  font-size: var(--fm-md);
+  font-size: var(--fs-4);
   font-weight: 700;
-  color: #554144;
+  color: var(--color-5);
   text-transform: uppercase;
 }
 
+/* "200 spots left" text */
 .spots-left {
-  font-size: var(--fm-sm);
+  font-size: var(--fs-2);
   font-weight: 600;
-  color: #554144;
+  color: var(--color-5);
 }
 
-/* Progress Bar */
+/* Progress bar container */
 .progress-bar {
   width: 100%;
   height: 32px;
-  background-color: #d4c4b0;
-  border-radius: 100px;
+  background-color: var(--color-18);
+  border-radius: var(--radius-6);
   overflow: hidden;
   position: relative;
 }
 
+/* Progress bar fill */
 .progress-fill {
   height: 100%;
-  background-color: #554144;
-  border-radius: 100px;
+  background-color: var(--color-5);
+  border-radius: var(--radius-6);
   transition: width 0.3s ease;
   position: relative;
 }
 
+/* Progress indicator circle */
 .progress-fill::after {
   content: "";
   position: absolute;
@@ -159,17 +169,18 @@
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-color: #7a6265;
+  background-color: var(--color-8);
   border-radius: 50%;
 }
 
-/* Hide on desktop */
+/* Hide on desktop (768px and above) */
 @media (min-width: 768px) {
   .sale-section {
     display: none;
   }
 }
 
+/* Respect user motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .progress-fill {
     transition: none;

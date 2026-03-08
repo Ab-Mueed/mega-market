@@ -1,58 +1,64 @@
+/* Packages section - pricing tiers display */
 .packages-section {
-  background-color: var(--color-cream);
-  padding: 160px 40px;
+  background-color: var(--color-16);
+  padding: var(--space-24) var(--space-16);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 180px;
+  gap: var(--space-25);
   position: relative;
 }
 
+/* Row container for package cards */
 .packages-row {
   display: flex;
   justify-content: center;
-  gap: 52px;
+  gap: var(--space-16);
   flex-wrap: wrap;
 }
 
+/* Top row - 3 cards */
 .packages-row-top {
   max-width: 1060px;
 }
 
+/* Bottom row - 2 cards */
 .packages-row-bottom {
-  max-width: 700px; /* Narrower for 2 cards */
+  max-width: 700px;
 }
 
-/* Give each card a fixed width */
+/* Fixed width for each card */
 .packages-row > .package-card {
   flex: 0 0 300px;
 }
 
-/* ── Responsive ── */
+/* Tablet: reduce card width slightly */
 @media (max-width: 1000px) {
   .packages-row > .package-card {
     flex: 0 0 280px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1110px) {
+/* Tablet: 768px to 1110px - extra gap for wrapped cards */
+@media (min-width: 768px) and (max-width: 1132px) {
   .packages-row {
-    gap: 52px 52px;
-    row-gap: 140px;
+    gap: var(--space-16);
+    row-gap: 180px;
   }
 }
 
+/* Mobile: stack cards vertically */
 @media (max-width: 767px) {
   .packages-section {
-    padding: 60px 20px;
-    padding-top: 120px; /* Extra top padding for absolute headers */
-    gap: 120px; /* More gap between cards for absolute headers */
-    position: static; /* Remove relative positioning on mobile */
+    padding: var(--space-17) var(--space-8);
+    padding-top: var(--space-21);
+    gap: var(--space-21);
+    position: static;
     top: 0;
   }
 
   .packages-row {
-    gap: 120px; /* Vertical gap between cards */
+    gap: var(--space-21);
   }
 
   .packages-row > .package-card {
@@ -60,9 +66,9 @@
     max-width: 340px;
   }
 
-  /* Extra spacing for Deluxe and Premium cards with arrow annotations */
+  /* Extra spacing for cards with arrow annotations */
   .package-card--deluxe,
   .package-card--premium {
-    margin-top: 40px;
+    margin-top: var(--space-16);
   }
 }

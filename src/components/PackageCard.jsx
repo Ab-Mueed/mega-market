@@ -25,19 +25,19 @@ function PackageCard({ tier }) {
       )}
 
       {/* Card header tab */}
-      <div className="package-card__header">
-        <span className="package-card__name">{name}</span>
-        <span className="package-card__label">PACKAGE</span>
+      <div className="package-card-header">
+        <span className="package-card-name">{name}</span>
+        <span className="package-card-label">PACKAGE</span>
       </div>
 
       {/* Card body */}
-      <div className="package-card__body">
-        <h3 className="package-card__entries">{entries}</h3>
+      <div className="package-card-body">
+        <h3 className="package-card-entries">{entries}</h3>
 
-        <ul className="package-card__features">
+        <ul className="package-card-features">
           {features.map((feature, i) => (
-            <li key={i} className="package-card__feature">
-              <span className="package-card__check" aria-hidden="true">
+            <li key={i} className="package-card-feature">
+              <span className="package-card-check" aria-hidden="true">
                 <img src={tickSVG} alt="" />
               </span>
               {feature}
@@ -45,14 +45,14 @@ function PackageCard({ tier }) {
           ))}
         </ul>
 
-        <hr className="package-card__divider" />
+        <hr className="package-card-divider" />
 
-        <div className="package-card__pricing">
-          <span className="package-card__price">{price}</span>
-          <span className="package-card__price-note">ONCE ONLY PAYMENT</span>
+        <div className="package-card-pricing">
+          <span className="package-card-price">{price}</span>
+          <span className="package-card-price-note">ONCE ONLY PAYMENT</span>
         </div>
 
-        <button className={`package-card__button package-card__button--${id}`}>
+        <button className={`package-card-button package-card-button--${id}`}>
           {buttonText}
         </button>
       </div>

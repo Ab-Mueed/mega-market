@@ -1,8 +1,10 @@
+/* Hero image */
 .hero-img {
   height: 422px;
   object-fit: cover;
 }
 
+/* Timer wrapper */
 .timer-wrapper {
   position: relative;
   display: flex;
@@ -10,6 +12,7 @@
   z-index: 13;
 }
 
+/* Desktop: full width hero image */
 @media (min-width: 768px) {
   .hero-img {
     height: auto;

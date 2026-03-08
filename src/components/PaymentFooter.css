@@ -1,63 +1,69 @@
-/* Payment Footer - Only visible on mobile */
-
+/* Payment footer - mobile-only payment methods display */
 .payment-footer {
-  background-color: var(--color-cream);
-  padding: var(--space-xl) var(--space-lg);
+  background-color: var(--color-16);
+  padding: var(--space-9) var(--space-6);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Payment methods card */
 .payment-methods {
-  background-color: #fff5ee;
-  border-radius: var(--radius-lg);
-  padding: var(--space-2xl) var(--space-xl);
+  background-color: var(--color-17);
+  border-radius: var(--radius-5);
+  padding: var(--space-15) var(--space-9);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-xl);
-  width: calc(100% - var(--space-2xl)); /* Subtract padding from edges */
+  gap: var(--space-9);
+  width: calc(100% - var(--space-15));
   max-width: 500px;
 }
 
+/* Payment title */
 .payment-title {
-  font-size: var(--fm-xxl);
+  font-size: var(--fs-8);
   font-weight: 500;
-  color: var(--color-dark-brown);
+  color: var(--color-5);
   text-align: center;
   line-height: 108%;
   max-width: 400px;
   margin: 0;
 }
 
+/* Payment logo row */
 .payment-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--space-xl);
+  gap: var(--space-9);
   width: 100%;
 }
 
+/* Top row with 3 logos */
 .payment-row-top {
-  gap: var(--space-2xl);
+  gap: var(--space-15);
 }
 
+/* Bottom row with 1 logo */
 .payment-row-bottom {
   justify-content: center;
 }
 
+/* Payment logo */
 .payment-logo {
   height: 22px;
   width: auto;
   object-fit: contain;
 }
 
+/* Large payment logo */
 .payment-logo-large {
   height: 22px;
 }
 
-/* Hide on desktop */
+/* Hide on desktop (768px and above) */
 @media (min-width: 768px) {
   .payment-footer {
     display: none;
