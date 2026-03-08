@@ -1,10 +1,12 @@
 import { TIMER_CONFIG } from '../data/constants';
 import './Timer.css';
 
-function Timer() {
+function Timer({ label, variant = "default" }) {
+  const timerLabel = label || TIMER_CONFIG.label;
+  
   return (
-    <div className="timer">
-      <p className="timer-label">{TIMER_CONFIG.label}</p>
+    <div className={`timer timer--${variant}`}>
+      <p className="timer-label">{timerLabel}</p>
       <div className="timer-circles">
         {TIMER_CONFIG.units.map((unit, index) => (
           <div key={index} className="timer-unit-wrapper">

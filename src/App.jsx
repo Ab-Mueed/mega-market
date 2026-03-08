@@ -4,6 +4,8 @@ import heroImage from "./assets/images/hero-img.png";
 import Timer from "./components/Timer";
 import Brands from "./components/Brands";
 import Packages from "./components/Packages";
+import Sale from "./components/Sale";
+import PaymentFooter from "./components/PaymentFooter";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Timer />
       </div>
       <Brands />
+      <Sale/>
       <Packages />
+      <PaymentFooter/>
     </div>
   );
 }

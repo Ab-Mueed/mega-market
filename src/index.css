@@ -21,12 +21,15 @@ img {
 
 :root {
   --color-primary: #c84e3f;
+  --color-orange: #d64f34;
   --color-dark: #222;
   --color-cream: #f4e9e1;
   --color-brown: #5a3d3d;
   --color-light-brown: #654d51;
+  --color-dark-brown: #554144;
   --color-white: #ffffff;
   --color-green: #3f7c63;
+  --color-dull-green: #4a8769;
   --color-burgandy: #843943;
   --color-light-burgandy: #762e37;
 

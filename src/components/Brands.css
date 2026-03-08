@@ -1,6 +1,6 @@
 .brands-section {
   background-color: var(--color-burgandy);
-  padding: var(--space-4xxl) var(--space-lg);
+  padding: var(--space-xl) 24px;
   text-align: center;
   position: relative;
   z-index: 10; /* Establish stacking context for chevron */
@@ -41,12 +41,12 @@
 .brands-button {
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: var(--space-md) var(--space-xl);
+  padding: 8px 20px;
   border: none;
   border-radius: 100px;
-  font-size: var(--fm-md);
-  font-weight: 600;
-  text-transform: capitalize;
+  font-size: var(--fm-xl);
+  font-weight: 700;
+  text-transform: uppercase;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
@@ -95,12 +95,19 @@
 
   .brands-section {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    padding: var(--space-4xxl) var(--space-xxl);
   }
 
   .brand-item {
     order: 0;
     flex: 0 0 auto;
     max-width: 120px;
+  }
+
+  .brands-button {
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: var(--space-md) var(--space-xl);
   }
 
   .brand-item:nth-child(6),

@@ -38,10 +38,17 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .packages-section {
     padding: 60px 20px;
-    gap: 40px;
+    padding-top: 120px; /* Extra top padding for absolute headers */
+    gap: 120px; /* More gap between cards for absolute headers */
+    position: static; /* Remove relative positioning on mobile */
+    top: 0;
+  }
+
+  .packages-row {
+    gap: 120px; /* Vertical gap between cards */
   }
 
   .packages-row > .package-card {

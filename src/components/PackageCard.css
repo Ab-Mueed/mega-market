@@ -26,7 +26,7 @@
   width: fit-content;
   position: absolute;
   top: -69px;
-  left: 10px;
+  left: 15px;
 }
 
 .package-card__name {
@@ -146,132 +146,133 @@
 
 /* STARTER — burgundy */
 .package-card--starter {
-  border-color: #8b2236;
+  border: 4px solid var(--color-burgandy);
 }
 .package-card--starter .package-card__header {
-  background-color: #8b2236;
+  background-color: var(--color-burgandy);
 }
 .package-card--starter .package-card__entries {
-  color: #8b2236;
+  color: var(--color-burgandy);
 }
 .package-card--starter .package-card__check svg {
-  color: #8b2236;
+  color: var(--color-burgandy);
 }
 .package-card--starter .package-card__price {
-  color: #8b2236;
+  color: var(--color-burgandy);
 }
 .package-card--starter .package-card__divider {
-  border-color: #8b2236;
-  opacity: 0.3;
+  border: 1px solid var(--color-burgandy);
 }
 .package-card__button--starter {
-  background-color: #8b2236;
+  background-color: var(--color-burgandy);
 }
 
 /* BASIC — dark brown/charcoal */
 .package-card--basic {
-  border-color: #3d2b2b;
+  border: 4px solid var(--color-dark-brown);
 }
 .package-card--basic .package-card__header {
-  background-color: #3d2b2b;
+  background-color: var(--color-dark-brown);
 }
 .package-card--basic .package-card__entries {
-  color: #3d2b2b;
+  color: var(--color-dark-brown);
 }
 .package-card--basic .package-card__check svg {
-  color: #3d2b2b;
+  color: var(--color-dark-brown);
 }
 .package-card--basic .package-card__price {
-  color: #3d2b2b;
+  color: var(--color-dark-brown);
 }
 .package-card--basic .package-card__divider {
-  border-color: #3d2b2b;
-  opacity: 0.3;
+  border: 1px solid var(--color-dark-brown);
 }
 .package-card__button--basic {
-  background-color: #3d2b2b;
+  background-color: var(--color-dark-brown);
 }
 
 /* DELUXE — forest green */
 .package-card--deluxe {
-  border-color: #2d6b4f;
+  border: 4px solid var(--color-dull-green);
 }
 .package-card--deluxe .package-card__header {
-  background-color: #2d6b4f;
+  background-color: var(--color-dull-green);
 }
 .package-card--deluxe .package-card__entries {
-  color: #2d6b4f;
+  color: var(--color-dull-green);
 }
 .package-card--deluxe .package-card__check svg {
-  color: #2d6b4f;
+  color: var(--color-dull-green);
 }
 .package-card--deluxe .package-card__price {
-  color: #2d6b4f;
+  color: var(--color-dull-green);
 }
 .package-card--deluxe .package-card__divider {
-  border-color: #2d6b4f;
-  opacity: 0.3;
+  border: 1px solid var(--color-dull-green);
 }
 .package-card__button--deluxe {
-  background-color: #2d6b4f;
+  background-color: var(--color-dull-green);
 }
 
 /* PREMIUM — orange/coral */
 .package-card--premium {
-  border-color: #d95f2b;
+  border: 4px solid var(--color-orange);
 }
 .package-card--premium .package-card__header {
-  background-color: #d95f2b;
+  background-color: var(--color-orange);
 }
 .package-card--premium .package-card__entries {
-  color: #d95f2b;
+  color: var(--color-orange);
 }
 .package-card--premium .package-card__check svg {
-  color: #d95f2b;
+  color: var(--color-orange);
 }
 .package-card--premium .package-card__price {
-  color: #d95f2b;
+  color: var(--color-orange);
 }
 .package-card--premium .package-card__divider {
-  border-color: #d95f2b;
-  opacity: 0.3;
+  border: 1px solid var(--color-orange);
 }
 .package-card__button--premium {
-  background-color: #d95f2b;
+  background-color: var(--color-orange);
 }
 
 /* ELITE — dark/black with red glow */
 .package-card--elite {
-  background-color: #1a1a1a;
-  border-color: #d95f2b;
+  background-color: #232323;
+  border: 4px solid #d95f2b;
   box-shadow: 0 0 30px 6px rgba(217, 95, 43, 0.45);
 }
 .package-card--elite .package-card__header {
-  background-color: #1a1a1a;
-  border-bottom: 2px solid #d95f2b;
+  background-color: #232323;
+  border-top: 4px solid #d95f2b;
+  border-right: 4px solid #d95f2b;
+  border-left: 4px solid #d95f2b;
+  border-bottom: 4px solid #d95f2b;
+
+  top: -76px;
+  left: 15px;
 }
 .package-card--elite .package-card__entries {
-  color: #fff;
+  color: var(--color-cream);
 }
 .package-card--elite .package-card__feature {
-  color: #ccc;
+  color: var(--color-cream);
 }
 .package-card--elite .package-card__check svg {
   color: #2d6b4f;
 }
 .package-card--elite .package-card__price {
-  color: #fff;
+  color: var(--color-cream);
 }
 .package-card--elite .package-card__price-note {
-  color: #666;
+  color: var(--color-cream);
 }
 .package-card--elite .package-card__divider {
-  border-color: rgba(255, 255, 255, 0.15);
-  opacity: 1;
+  border: 1px solid var(--color-cream);
 }
 .package-card__button--elite {
-  background-color: #f5f0e8;
-  color: #1a1a1a;
+  background-color: var(--color-cream);
+  color: #131309;
 }
 
 /* =============================================
@@ -320,6 +321,7 @@
   top: 0;
   right: 55px;
   font-size: 30px;
+  font-weight: 700;
 }
 
 .package-badge-annotation--bestvalue .package-badge-arrow {
@@ -330,7 +332,7 @@
 }
 
 .package-badge-text {
-  font-family: "Caveat", "Dancing Script", cursive;
+  font-family: "Caveat", cursive;
   font-size: 1rem;
   font-weight: 500;
   white-space: nowrap;
