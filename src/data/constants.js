@@ -1,3 +1,18 @@
+// Brand images
+import flexibleBrand from "../assets/images/flexible-brand.png";
+import jonoBrand from "../assets/images/jono-brand.png";
+import ringersBrand from "../assets/images/ringers-brand.png";
+import leaderBrand from "../assets/images/leader-brand.png";
+import cenBrand from "../assets/images/cen-brand.png";
+import ariatBrand from "../assets/images/ariat-brand.png";
+import gregBrand from "../assets/images/greg-brand.png";
+
+// Payment method images
+import applePay from "../assets/images/apple-pay.svg";
+import googlePay from "../assets/images/g-pay.svg";
+import stripe from "../assets/images/stripe.svg";
+import payPal from "../assets/images/pay-pal.svg";
+
 export const DISCOUNT_SECTION = {
   title: "UNLOCK DISCOUNTS",
   subtitle: "At 30+ leading horse and country brands",
@@ -6,33 +21,33 @@ export const DISCOUNT_SECTION = {
 export const BRANDS = [
   {
     name: "Flexible Fit",
-    image: "/src/assets/images/flexible-brand.png",
+    image: flexibleBrand,
     alt: "Flexible Fit Equestrian",
   },
   {
     name: "Jono",
-    image: "/src/assets/images/jono-brand.png",
+    image: jonoBrand,
     alt: "Jono & Johno",
   },
   {
     name: "Ringers",
-    image: "/src/assets/images/ringers-brand.png",
+    image: ringersBrand,
     alt: "Ringers Western",
   },
   {
     name: "Leader",
-    image: "/src/assets/images/leader-brand.png",
+    image: leaderBrand,
     alt: "Leader Equine",
   },
   {
     name: "CEN",
-    image: "/src/assets/images/cen-brand.png",
+    image: cenBrand,
     alt: "CEN Nutrition",
   },
-  { name: "Ariat", image: "/src/assets/images/ariat-brand.png", alt: "Ariat" },
+  { name: "Ariat", image: ariatBrand, alt: "Ariat" },
   {
     name: "Greg Grant",
-    image: "/src/assets/images/greg-brand.png",
+    image: gregBrand,
     alt: "Greg Grant Saddlery",
   },
 ];
@@ -126,8 +141,8 @@ export const PRICING_TIERS = [
 ];
 
 export const PAYMENT_METHODS = [
-  { name: 'Apple Pay', image: '/src/assets/images/apple-pay.svg' },
-  { name: 'Google Pay', image: '/src/assets/images/g-pay.svg' },
-  { name: 'Stripe', image: '/src/assets/images/stripe.svg' },
-  { name: 'PayPal', image: '/src/assets/images/pay-pal.svg' }
+  { name: "Apple Pay", image: applePay },
+  { name: "Google Pay", image: googlePay },
+  { name: "Stripe", image: stripe },
+  { name: "PayPal", image: payPal },
 ];
