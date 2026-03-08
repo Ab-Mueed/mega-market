@@ -24,7 +24,7 @@
 .payment-title {
   font-size: var(--fm-xxl);
   font-weight: 500;
-  color: #6b6b6b;
+  color: var(--color-dark-brown);
   text-align: center;
   line-height: 108%;
   max-width: 400px;

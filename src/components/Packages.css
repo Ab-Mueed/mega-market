@@ -14,7 +14,7 @@
 .packages-row {
   display: flex;
   justify-content: center;
-  gap: 28px;
+  gap: 52px;
   flex-wrap: wrap;
 }
 

@@ -1,9 +1,59 @@
+/* Greycliff CF Font Family */
+@font-face {
+  font-family: "Greycliff CF";
+  src: url("/fonts/Greycliff-CF-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: url("/fonts/Greycliff-CF-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: url("/fonts/Greycliff-CF-Demi-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: url("/fonts/Greycliff-CF-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: url("/fonts/Greycliff-CF-Extra-Bold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: url("/fonts/Greycliff-CF-Heavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
 }
 
 body {
   font-family:
+    "Greycliff CF",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,

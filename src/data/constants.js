@@ -66,7 +66,7 @@ export const PRICING_TIERS = [
     entries: "7 ENTRIES",
     features: [
       "1 Month access to partner Discounts",
-      "6 + 1 FREE entries into the draw",
+      "6 FREE entries into the draw",
       "Support Draught Angels helping farmers in need",
     ],
     price: "$69.99",
@@ -126,8 +126,8 @@ export const PRICING_TIERS = [
 ];
 
 export const PAYMENT_METHODS = [
-  { name: "Apple Pay", alt: "Apple Pay" },
-  { name: "Google Pay", alt: "Google Pay" },
-  { name: "Shop Pay", alt: "Shop Pay" },
-  { name: "PayPal", alt: "PayPal" },
+  { name: 'Apple Pay', image: '/src/assets/images/apple-pay.svg' },
+  { name: 'Google Pay', image: '/src/assets/images/g-pay.svg' },
+  { name: 'Stripe', image: '/src/assets/images/stripe.svg' },
+  { name: 'PayPal', image: '/src/assets/images/pay-pal.svg' }
 ];

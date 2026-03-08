@@ -41,9 +41,10 @@
 
 /* Entries Banner */
 .entries-banner {
-  background: linear-gradient(135deg, #c8d5b9 0%, #a8b89a 100%);
+  background: #b8c299;
+  border: 2px solid #a2ab87;
   border-radius: var(--radius-md);
-  padding: var(--space-xl);
+  padding: 13px 18px;
   width: 100%;
   max-width: 500px;
   display: flex;
@@ -58,41 +59,44 @@
 }
 
 .entries-title {
-  font-size: var(--fm-lg);
+  font-size: 17px;
   font-weight: 800;
-  color: var(--color-dark);
+  color: var(--color-dark-brown);
+  line-height: 108%;
   margin-bottom: var(--space-xs);
   text-transform: uppercase;
 }
 
 .entries-subtitle {
   font-size: var(--fm-sm);
-  color: var(--color-green);
-  font-weight: 600;
+  color: #4a8769;
+  font-weight: 500;
+  line-height: 108%;
   margin: 0;
 }
 
 .packages-left {
   background-color: var(--color-green);
   border-radius: var(--radius-sm);
-  padding: var(--space-md) var(--space-lg);
+  padding: 25px 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
+  white-space: nowrap;
 }
 
 .packages-number {
-  font-size: var(--fm-2xl);
+  font-size: var(--fm-lg);
   font-weight: 800;
   color: var(--color-white);
   line-height: 1;
 }
 
 .packages-text {
-  font-size: var(--fm-xs);
+  font-size: var(--fm-sm);
   color: var(--color-white);
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -155,7 +159,7 @@
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-color: #8b6a5a;
+  background-color: #7a6265;
   border-radius: 50%;
 }
 

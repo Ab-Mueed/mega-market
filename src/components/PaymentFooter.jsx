@@ -1,15 +1,9 @@
+import { PAYMENT_METHODS } from '../data/constants';
 import './PaymentFooter.css';
 
 function PaymentFooter() {
-  const paymentMethods = [
-    { name: 'Apple Pay', image: '/src/assets/images/apple-pay.svg' },
-    { name: 'Google Pay', image: '/src/assets/images/g-pay.svg' },
-    { name: 'Stripe', image: '/src/assets/images/stripe.svg' },
-    { name: 'PayPal', image: '/src/assets/images/pay-pal.svg' }
-  ];
-
-  const topRowMethods = paymentMethods.slice(0, 3);
-  const bottomRowMethod = paymentMethods[3];
+  const topRowMethods = PAYMENT_METHODS.slice(0, 3);
+  const bottomRowMethod = PAYMENT_METHODS[3];
 
   return (
     <footer className="payment-footer">

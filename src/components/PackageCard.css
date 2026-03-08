@@ -19,7 +19,7 @@
 .package-card__header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 10px 18px 12px;
   border-radius: 10px 10px 0 0;
   line-height: 1.1;
@@ -47,7 +47,7 @@
 
 /* ── Card body ── */
 .package-card__body {
-  padding: 20px 22px 24px;
+  padding: 20px 31px 24px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -75,9 +75,9 @@
   display: flex;
   align-items: flex-start;
   gap: 9px;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 .package-card__check {
@@ -343,4 +343,21 @@
   width: 50px;
   height: 40px;
   display: block;
+}
+
+/* Feature text colors matching border colors */
+.package-card--starter .package-card__feature {
+  color: #8b2236;
+}
+
+.package-card--basic .package-card__feature {
+  color: #3d2b2b;
+}
+
+.package-card--deluxe .package-card__feature {
+  color: #2d6b4f;
+}
+
+.package-card--premium .package-card__feature {
+  color: #d95f2b;
 }
